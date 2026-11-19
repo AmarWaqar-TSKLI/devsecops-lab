@@ -47,6 +47,7 @@ jobs:
 
       - name: Keep the SBOM
         uses: actions/upload-artifact@v4
+        continue-on-error: true
         with:
           name: sbom
           path: sbom.cdx.json
